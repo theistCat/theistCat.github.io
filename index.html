@@ -22,15 +22,17 @@
     <div class="container">
         <head>
             <script>
-    function closeWindow() {
-        window.open('','_parent','');
-        window.close();
-    }
-</script> 
+                function leave() {
+  var myWindow = window.open("", "_self");
+  myWindow.document.write("");
+  setTimeout (function() {myWindow.close();},1000);
+}
+            </script>
+            
             <title>@heist site!</title>
             <div style="display: inline;">
 <!--             <img src="/icons/circle-solid-red.svg" alt="red dot" height="15" width="15"/> -->
-            <a href="#" onclick="javascript:closeWindow();"/><img src="/icons/circle-solid-red.svg" alt="red dot" height="15" width="15"/></a>
+            <a href="#" onclick="javascript:leave();"/><img src="/icons/circle-solid-red.svg" alt="red dot" height="15" width="15"/></a>
             <img src="/icons/circle-solid-yellow.svg" alt="yellow dot" height="15" width="15"/>
             <img src="/icons/circle-solid-green.svg" alt="green dot" height="15" width="15"/>
             </div>
