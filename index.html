@@ -21,10 +21,16 @@
     </style>
     <div class="container">
         <head>
+            <script>
+    function closeWindow() {
+        window.open('','_parent','');
+        window.close();
+    }
+</script> 
             <title>@heist site!</title>
             <div style="display: inline;">
             <img src="/icons/circle-solid-red.svg" alt="red dot" height="15" width="15"/>
-                <a href="#" onclick="javascript:window.close();opener.window.focus();" src="/icons/circle-solid-red.svg" alt="red dot" height="15" width="15"/>
+            <a href="#" src="/icons/circle-solid-red.svg" alt="red dot" height="15" width="15" onclick="javascript:closeWindow();"/></a>
             <img src="/icons/circle-solid-yellow.svg" alt="yellow dot" height="15" width="15"/>
             <img src="/icons/circle-solid-green.svg" alt="green dot" height="15" width="15"/>
             </div>
