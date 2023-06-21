@@ -26,7 +26,33 @@
   var myWindow = window.open("", "_self");
   myWindow.document.write("");
   setTimeout (function() {myWindow.close();},1000);
+            
 }
+                function enterFullScreen(element) {
+  if(element.requestFullscreen) {
+    element.requestFullscreen();
+  }else if (element.mozRequestFullScreen) {
+    element.mozRequestFullScreen();     // Firefox
+  }else if (element.webkitRequestFullscreen) {
+    element.webkitRequestFullscreen();  // Safari
+  }else if(element.msRequestFullscreen) {
+    element.msRequestFullscreen();      // IE/Edge
+  }
+};
+
+let btn = document.getElementById("full_screen");
+btn.addEventListener("click", function(){
+  let videoEle = document.querySelector('video');
+  enterFullScreen(videoEle);
+});
+
+document.addEventListener('fullscreenchange', (event) => {
+  if (document.fullscreenElement) {
+    console.log('Entered fullscreen:', document.fullscreenElement);
+  } else {
+    console.log('Exited fullscreen.');
+  }
+});
             </script>
             
             <title>@heist site!</title>
@@ -34,7 +60,7 @@
 <!--             <img src="/icons/circle-solid-red.svg" alt="red dot" height="15" width="15"/> -->
             <a href="#" onclick="javascript:leave();"/><img src="/icons/circle-solid-red.svg" alt="red dot" height="15" width="15"/></a>
             <img src="/icons/circle-solid-yellow.svg" alt="yellow dot" height="15" width="15"/>
-            <img src="/icons/circle-solid-green.svg" alt="green dot" height="15" width="15"/>
+            <button id="full_screen"><img src="/icons/circle-solid-green.svg" alt="green dot" height="15" width="15"/></button>
             </div>
             <h1 style="padding: auto; color:#FFF">
             @heist Site!
