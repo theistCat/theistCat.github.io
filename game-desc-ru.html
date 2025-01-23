@@ -1,0 +1,20 @@
+<html>
+  <head>
+    <title>Project Wizard (Ru_ru)</title>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  </head>
+  <body>
+    <div id="content">Loading...</div>
+    <script>
+        fetch('game-desc-ru.md') // Замените на путь к вашему файлу .md
+            .then(response => response.text())
+            .then(markdownText => {
+                document.getElementById('content').innerHTML = marked.parse(markdownText);
+            })
+            .catch(error => {
+                document.getElementById('content').innerHTML = 'Error loading page.';
+                console.error(error);
+            });
+    </script>
+  </body>
+</html>
