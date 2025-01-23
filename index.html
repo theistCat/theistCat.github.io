@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html style="background-color:#FFFFFF; font-family: 'Courier New', monospace;">
     <style>
         .container {
@@ -28,31 +29,31 @@
   setTimeout (function() {myWindow.close();},1000);
             
 }
-                function enterFullScreen(element) {
-  if(element.requestFullscreen) {
-    element.requestFullscreen();
-  }else if (element.mozRequestFullScreen) {
-    element.mozRequestFullScreen();     // Firefox
-  }else if (element.webkitRequestFullscreen) {
-    element.webkitRequestFullscreen();  // Safari
-  }else if(element.msRequestFullscreen) {
-    element.msRequestFullscreen();      // IE/Edge
-  }
-};
+//                 function enterFullScreen(element) {
+//   if(element.requestFullscreen) {
+//     element.requestFullscreen();
+//   }else if (element.mozRequestFullScreen) {
+//     element.mozRequestFullScreen();     // Firefox
+//   }else if (element.webkitRequestFullscreen) {
+//     element.webkitRequestFullscreen();  // Safari
+//   }else if(element.msRequestFullscreen) {
+//     element.msRequestFullscreen();      // IE/Edge
+//   }
+// };
 
-let img = document.getElementById("full_screen");
-img.addEventListener("click", function(){
-  let videoEle = document.querySelector('video');
-  enterFullScreen(videoEle);
-});
+// let img = document.getElementById("full_screen");
+// img.addEventListener("click", function(){
+//   let videoEle = document.querySelector('video');
+//   enterFullScreen(videoEle);
+// });
 
-document.addEventListener('fullscreenchange', (event) => {
-  if (document.fullscreenElement) {
-    console.log('Entered fullscreen:', document.fullscreenElement);
-  } else {
-    console.log('Exited fullscreen.');
-  }
-});
+// document.addEventListener('fullscreenchange', (event) => {
+//   if (document.fullscreenElement) {
+//     console.log('Entered fullscreen:', document.fullscreenElement);
+//   } else {
+//     console.log('Exited fullscreen.');
+//   }
+// });
             </script>
             
             <title>@heist site!</title>
