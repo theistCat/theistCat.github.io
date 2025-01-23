@@ -48,7 +48,7 @@
     </div>
   <div>
        <script>
-        fetch('my-wiki-page.md') // Замените на путь к вашему файлу .md
+        fetch('game-desc-en.md') // Замените на путь к вашему файлу .md
             .then(response => response.text())
             .then(markdownText => {
                 document.getElementById('content').innerHTML = marked.parse(markdownText);
