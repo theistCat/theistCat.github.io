@@ -3,7 +3,6 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css.css">
-     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <script>
         function toggleFullscreen() {
             const container = document.querySelector('.container');
@@ -47,17 +46,8 @@
         </h1>
     </div>
   <div>
-       <script>
-        fetch('game-desc-en.md') // Замените на путь к вашему файлу .md
-            .then(response => response.text())
-            .then(markdownText => {
-                document.getElementById('content').innerHTML = marked.parse(markdownText);
-            })
-            .catch(error => {
-                document.getElementById('content').innerHTML = 'Error loading page.';
-                console.error(error);
-            });
-    </script>
+     <a href="/game-desc-en.html">Game Description EN</a>
+     <a href="/game-desc-ru.html">Game Description RU</a>
   </div>
 </body>
 </html>
