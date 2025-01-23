@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html style="background-color:#FFFFFF; font-family: 'Courier New', monospace;"; lang="en">
     <div class="container">
         <head>
@@ -43,4 +43,42 @@
         <a href="/coffee.html"><img src="icons/cup-of-coffee.svg" alt="maybe coffee?)))" height="45" width="45"/></a>
         </body>
     </div>
+</html>
+ -->
+
+ <!DOCTYPE html>
+<html style="background-color:#FFFFFF; font-family: 'Courier New', monospace;" lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css.css">
+    <script>
+        function toggleFullscreen() {
+            const container = document.querySelector('.container');
+            const fullScreenButton = document.getElementById('full_screen');
+            container.classList.toggle('fullscreen');
+
+            if (container.classList.contains('fullscreen')) {
+                fullScreenButton.src = "/icons/circle-solid-green.svg"; // Можно поменять иконку
+            } else {
+                fullScreenButton.src = "/icons/circle-solid-green.svg"; // Возвращаем исходную
+            }
+        }
+    </script>
+    <title>@heist site!</title>
+    <div style="display: inline;">
+        <a href="#" onclick="javascript:leave();"><img src="/icons/circle-solid-red.svg" alt="red dot" height="15" width="15"/></a>
+        <img src="/icons/circle-solid-yellow.svg" alt="yellow dot" height="15" width="15"/>
+        <img id="full_screen" src="/icons/circle-solid-green.svg" alt="green dot" height="15" width="15" onclick="toggleFullscreen()"/>
+    </div>
+    <h1 style="padding: auto; color:#FFF">@heist Site!</h1>
+</head>
+<body>
+    <div class="container">
+        <img src="/icons/pencil-ruler-solid.svg" alt="construction" height="200" width="200" style="display: block; margin-left: auto; margin-right: auto;"/>
+        <h1 style="padding: auto; text-align:center; font-weight: normal; color:#FFF">see you soon!)</h1>
+        <a href="https://heistcat.t.me"><img src="/icons/telegram-brands.svg" alt="telegram link" height="50" width="50"/></a>
+        <a href="https://www.instagram.com/heistcat/"><img src="/icons/instagram-square-brands.svg" alt="instagram link" height="50" width="50"/></a>
+        <a href="/coffee.html"><img src="icons/cup-of-coffee.svg" alt="maybe coffee?)))" height="45" width="45"/></a>
+    </div>
+</body>
 </html>
