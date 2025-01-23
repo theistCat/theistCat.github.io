@@ -3,6 +3,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css.css">
+     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <script>
         function toggleFullscreen() {
             const container = document.querySelector('.container');
@@ -45,5 +46,18 @@
             see you soon!)
         </h1>
     </div>
+  <div>
+       <script>
+        fetch('my-wiki-page.md') // Замените на путь к вашему файлу .md
+            .then(response => response.text())
+            .then(markdownText => {
+                document.getElementById('content').innerHTML = marked.parse(markdownText);
+            })
+            .catch(error => {
+                document.getElementById('content').innerHTML = 'Error loading page.';
+                console.error(error);
+            });
+    </script>
+  </div>
 </body>
 </html>
