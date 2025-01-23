@@ -9,7 +9,7 @@
     -webkit-box-shadow: 5px 5px 5px #6b2c04;
     box-shadow: 5px 5px 5px #6b2c04;
     border-radius: 20px;
-    transition: all 0.5s ease; /* Добавляем плавный переход */
+    transition: all 1s ease; /* Добавляем плавный переход */
 }
 
 .container.fullscreen {
