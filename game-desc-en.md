@@ -3,11 +3,11 @@
 ## 1. General Description
 
 - **Game Title:**
-      **Project Wizard**
+      ***Project Wizard***
 - **Genre:**
-      **Metroidvania with RPG elements**
+      ***Metroidvania with RPG elements***
 - **Platform:**
-      **MacOS, Windows 7+, Linux**
+      ***MacOS, Windows 7+, Linux***
       (Android, iOS, SwitchOS, Xbox, PS5+ later)
 - **Short Description (elevator pitch):**
       In a world where identity is fleeting and magic is punished by the "Corporation Boss," only one artifact remains constant: the staff. In this Metroidvania RPG, you will embody many guises, each with unique abilities, but only the staff will guide you through the darkness to the truth.
