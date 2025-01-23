@@ -8,9 +8,9 @@
     <script>
         fetch('game-desc-en.md') // Замените на путь к вашему файлу .md
             .then(response => response.text())
-            .then(markdownText => {
-                document.getElementById('content').innerHTML = marked.parse(markdownText);
-            })
+            // .then(markdownText => {
+            //     document.getElementById('content').innerHTML = marked.parse(markdownText);
+            // })
             .catch(error => {
                 document.getElementById('content').innerHTML = 'Error loading page.';
                 console.error(error);
