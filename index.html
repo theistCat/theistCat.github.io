@@ -10,6 +10,17 @@
                   myWindow.document.write("");
                   setTimeout (function() {myWindow.close();},1000);
                 }
+                function toggleFullscreen() {
+                    const container = document.querySelector('.container');
+                    const fullScreenButton = document.getElementById('full_screen');
+                    container.classList.toggle('fullscreen');
+        
+                    if (container.classList.contains('fullscreen')) {
+                        fullScreenButton.src = "/icons/circle-solid-green.svg"; // Можно поменять иконку
+                    } else {
+                        fullScreenButton.src = "/icons/circle-solid-green.svg"; // Возвращаем исходную
+                    }
+                }
             </script>
             
             <title>@heist site!</title>
